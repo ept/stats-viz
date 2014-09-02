@@ -13,6 +13,9 @@ Demo
 
 [Click here to see it.](http://ept.github.io/stats-viz/confidence.html)
 
+This application should work in all modern browsers (Chrome, Firefox, Safari, etc), but it is
+*not compatible* with Internet Explorer 6, 7 and 8. Internet Explorer 9 and above should be ok.
+
 
 Development
 -----------
