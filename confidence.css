@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+section {
+    clear: both;
+    margin-top: 40px;
+    width: 1150px;
+}
+
+#samples-table {
+    width: 150px;
+    height: 500px;
+    float: left;
+    overflow: scroll;
+}
+
+#samples-table th, #samples-table td {
+    font-weight: normal;
+    text-align: right;
+    padding-right: 1.2em;
+}
+
+#samples-chart {
+    float: left;
+    padding-right: 35px;
+}
+
+#samples-chart svg {
+    background: #ffc;
+}
+
+.axis text {
+    font-size: 10px;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+path.gaussian {
+    fill: none;
+    stroke: #0d0;
+    stroke-width: 3px;
+}
+
+circle.sample {
+    fill: #00f;
+}
+
+circle.mean {
+    fill: #f0f;
+}
+
+#statistics {
+    width: 250px;
+    float: left;
+}
+
+#statistics th, #statistics td {
+    font-weight: normal;
+    text-align: left;
+    padding-right: 1em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="d3-3.4.11.js" charset="utf-8"></script>
+    <script src="jquery-2.1.1.js" charset="utf-8"></script>
+    <script src="confidence.js" charset="utf-8"></script>
+    <link href="confidence.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Confidence interval for the mean</h1>
+
+    <section id="parameters">
+        <label for="mean">Mean <em>&mu;</em> =</label>
+        <input id="mean" type="number" value="5.0">
+
+        <label for="stddev">Standard deviation <em>&sigma;</em> =</label>
+        <input id="stddev" type="number" value="3.0">
+
+        <label for="samples">Number of samples <em>n</em> =</label>
+        <input id="samples" type="number" value="10">
+
+        <input id="generate" type="button" value="Generate samples">
+    </section>
+
+    <section id="one-experiment">
+        <div id="samples-table">
+            <h3>Samples</h3>
+            <table>
+                <thead><tr><th>No.</th><th>Value</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="samples-chart"></div>
+
+        <div id="statistics">
+            <h3>Statistics</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Observed mean <em>x&#772;</em> =</th>
+                        <td id="observed-mean"></td>
+                    </tr>
+                    <tr>
+                        <th>Sample std.dev <em>s</em> =</th>
+                        <td id="observed-stddev"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="repeated-experiment">
+    </section>
+</body>
+</html>
